@@ -1,4 +1,4 @@
-FROM library/alpine
+FROM library/alpine:latest
 
 ADD README.md /README.md
 
