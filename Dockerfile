@@ -2,4 +2,4 @@ FROM alpine
 
 ADD README.md /README.md
 
-CMD ["echo", "/README.md"]
+CMD ["cat", "/README.md"]
