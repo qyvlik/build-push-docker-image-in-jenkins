@@ -74,7 +74,7 @@ here the private docker registry url is `192.168.5.196:5000`
         - `Docker registry URL`:`192.168.5.196:5000`
     4. **Stop container(s) by image ID**
         - `Image ID`: `192.168.5.196:5000/yh/example-docker-image:latest`
-    5. **Remove container**
+    5. **Remove container(s)**
         - `Container ID(s)`: `example-docker-image`
         - `Ignore if not found`: **yes**
     6. **Create container**
