@@ -80,8 +80,9 @@ here the private docker registry url is `192.168.5.196:5000`
     6. **Create container**
         - `Image name`: `192.168.5.196:5000/yh/example-docker-image:latest`
         - `Container name`: `example-docker-image`
-        - 
-
+    7. **Start container(s)**
+        - `Container ID(s)`: `example-docker-image`
+5. run jenkins build
 
 
 
