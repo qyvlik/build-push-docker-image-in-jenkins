@@ -14,7 +14,7 @@ Make sure there is docker deamon run on your local machine.
     -v ~/docker/local-docker-registry:/var/lib/registry \
     registry
     ```
-2. set the `insecure-registries` in the `/etc/docker/daemon.json`, and restart the docker deamon
+2. set the `insecure-registries` in the `/etc/docker/daemon.json`, and restart the docker daemon
     ```
     {
       "insecure-registries":[
@@ -55,7 +55,7 @@ Build image and push image into private docker registry, make sure you have a ru
 
 here the private docker registry url is `192.168.5.196:5000`
 
-1. install the jenkins plugin: `[docker-build-step](https://wiki.jenkins.io/display/JENKINS/Docker+build+step+plugin)`
+1. install the jenkins plugin: [docker-build-step](https://wiki.jenkins.io/display/JENKINS/Docker+build+step+plugin)
 2. create a new jenkins job
 3. add git url `https://github.com/qyvlik/build-push-docker-image-in-jenkins.git`
 4. add the **Execute Docker command**
