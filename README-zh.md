@@ -48,7 +48,7 @@
     ```
 ## 在 jenkins 上构建镜像
 
-构建镜像然后推送到 `docker registry` 私服，确保你运行了一个私服，且 `docker daemon` 开启了 remote api。本文的 `docker registry` 私服路径是 `92.168.5.196:5000`
+构建镜像然后推送到 `docker registry` 私服，确保你运行了一个私服，且 `docker daemon` 开启了 remote api。本文的 `docker registry` 私服路径是 `192.168.5.196:5000`
 
 1. 在 jenkins 上安装插件 [docker-build-step](https://wiki.jenkins.io/display/JENKINS/Docker+build+step+plugin)
 2. 在 jenkins 上创建job
@@ -71,7 +71,7 @@
         - `Image ID`: `192.168.5.196:5000/yh/example-docker-image:latest`
     5. **Remove container(s)**
         - `Container ID(s)`: `example-docker-image`
-        - `Ignore if not found`: **yes**
+        - `Ignore if not found`: **yes**, (很重要，如果没有这个容器，则忽略，否则会报错)
     6. **Create container**
         - `Image name`: `192.168.5.196:5000/yh/example-docker-image:latest`
         - `Container name`: `example-docker-image`
